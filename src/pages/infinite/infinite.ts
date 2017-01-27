@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-infinit',
-  templateUrl: 'infinit.html'
+  selector: 'page-infinite',
+  templateUrl: 'infinite.html'
 })
-export class InfinitPage {
+export class InfinitePage {
   private start: number = 0;
   private iteration: number = 0;
   properties = [];
