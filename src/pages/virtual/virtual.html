@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Virtual
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list [virtualScroll]="properties" approxItemHeight="180px">
+    <ion-item *virtualItem="let property">
+      <ion-thumbnail item-left>
+        <ion-img src="{{ property.imageUrl }}"></ion-img>
+        </ion-thumbnail>
+        <h2>{{property.name}} {{ property.imageUrl }}</h2>
+        <p>{{property.city}}{{property.city ? ',' : ''}} {{property.state}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
